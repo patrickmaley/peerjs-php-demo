@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>PeerJS - Video chat example</title>
@@ -16,7 +17,7 @@
       console.log("This is id:" + id);
       $('#my-id').text(id);
     });
-
+    console.log("This is id:" + peer.id);
     // Receiving a call
     peer.on('call', function(call){
       // Answer the call automatically (instead of prompting user) for demo purposes
