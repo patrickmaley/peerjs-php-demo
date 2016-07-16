@@ -12,8 +12,8 @@
     // PeerJS object
     var peer = new Peer("",{ host: 'https://peer-server-js-patrick.herokuapp.com',  port: 9000});
     console.log(peer);
-    peer.on('open', function(id){
-      $('#my-id').text(id);
+    peer.on('open', function(){
+      $('#my-id').text(peer.id);
     });
 
     // Receiving a call
