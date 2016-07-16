@@ -11,7 +11,7 @@
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
     // PeerJS object
-    var peer = new Peer("",{ host: 'https://peer-server-js-patrick.herokuapp.com/',  port: 9000, path: '/'});
+    var peer = new Peer({ host: 'https://peer-server-js-patrick.herokuapp.com/',  port: 9000, path: '/'});
     console.log(peer);
     peer.on('open', function(id){
       console.log("This is id:" + id);
