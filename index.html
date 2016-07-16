@@ -10,10 +10,10 @@
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
     // PeerJS object
-    var peer = new Peer({ key: '6165842a-5c0d-11e3-b514-75d3313b9d05', debug: 3});
+    var peer = new Peer({ key: '57tysx404dv7k3xr'});
 
-    peer.on('open', function(){
-      $('#my-id').text(peer.id);
+    peer.on('open', function(id){
+      $('#my-id').text(id);
     });
 
     // Receiving a call
